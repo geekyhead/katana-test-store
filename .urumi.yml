@@ -1,0 +1,4 @@
+# Urumi deploy config (required). themes/ and plugins/ at the repo root are
+# auto-mapped into wp-content (with --delete).
+config_version: 1
+folder_mappings: []
