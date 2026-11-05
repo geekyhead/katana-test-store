@@ -1,4 +1,9 @@
-# Urumi deploy config (required). themes/ and plugins/ at the repo root are
-# auto-mapped into wp-content (with --delete).
+# Urumi deploy config (required). Mode 3: WordPress base + mappings.
+# plugins/ and themes/ are also auto-mapped (with --delete): the repo is the
+# source of truth for both trees.
 config_version: 1
-folder_mappings: []
+folder_mappings:
+  - source: plugins
+    target: wp-content/plugins
+  - source: themes
+    target: wp-content/themes
